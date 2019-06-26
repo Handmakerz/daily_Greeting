@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    /* background-color: rgb(65, 52, 52); */
+    background-color: rgb(59, 56, 56);
+}
+
+.headerbackground {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(rgb(119, 202, 223), rgb(51, 124, 143));
+    color: aliceblue;
+}
+
+.selection_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color:  rgb(210, 208, 211);
+}
+
+.selection {
+    height: 33px;
+    width: 5.2rem;
+    margin: 28px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 1;
+    background-color: rgb(65, 52, 52);
+    color:white;
+    outline: none;
+}
+.tooltip {
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 80px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 85%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+button#btn1.calender {
+    position: relative;
+    top:140px;
+    left:97%;
+    margin-right: 230px;
+    padding: 10px 20px;
+    background-color: rgb(210, 208, 211);
+    border-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+button#btn1.calender:hover {
+    border-bottom: 4px solid rgb(172, 146, 243);
+}
+
+/* Work on the global time */
+/* .americas-time {
+    position: absolute;
+    top:200px;
+    left:85%;
+    margin-right: 230px;
+    padding: 10px 20px;
+    background-color:  lightgrey;
+    border-style: none;
+    border-radius: 3px;
+    cursor: pointer;
+}  */
+
+h1 {
+    margin-top: 24px;
+    letter-spacing: 1px;
+    color: rgb(14, 4, 78);
+}
+
+.far {
+    font-size: 1.5rem;
+    /* color: rgb(14, 4, 78); */
+    
+}
+
+.fab {
+    font-size: 3rem;
+    position: relative;
+    right:560px;
+    top:15px;
+    color: rgb(14, 4, 78);
+}
+
+#greetingOutput{
+    font-size: 4rem;
+    color:#777;
+}
+
+#message {
+    font-size: 2rem;
+    color: rgb(160, 101, 14);
+}
+
+#theDate {
+    font-size: 1.5rem;
+    color: blanchedalmond;
+}
+
+.clock_output {
+    font-size: 4rem;
+}
+
+#h {
+    display: inline-block;
+}
+
+h4 {
+    margin-top: 5%;
+    color:whitesmoke;
+}
+h5 {
+    margin-top: -50px;
+    color:whitesmoke;
+    
+}
+
+a:link {
+    color:white;
+}
+
+a:hover {
+    color:purple;
+}
+
+/* query for the smallest window */
+@media screen and (max-width: 780px) {
+    button#btn1.calender {
+        position: absolute;
+        top:156px;
+        left:2%;
+        margin-right: 230px;
+        padding: 10px 20px;
+        background-color:  lightgrey;
+        border-style: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .fab {
+        font-size: 3rem;
+        position: relative;
+        right:50px;
+        top:20px;
+    }
+
+    .tooltip .tooltiptext {
+        visibility: hidden;
+        width: 80px;
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: -125%;
+        left: 85%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
+      }
+}
+
+@media screen and (max-width: 600px) {
+    #output {
+        font-size:3.4rem;
+        font-family: 'Open Sans Condensed', 'sans-serif';
+        text-align:'center';
+        color:#777;
+    }
+}
+
+@media screen and (min-width: 780px) {
+    #output {
+        font-size:4rem;
+        font-family: 'Open Sans Condensed', 'sans-serif';
+        text-align:'center';
+        color:#777;
+    }
+
+    button#btn1.calender {
+        position: absolute;
+        top:150px;
+        left:77%;
+        margin-right: 230px;
+        padding: 10px 20px;
+        background-color:  lightgrey;
+        border-style: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    .fab {
+        font-size: 3rem;
+        position: relative;
+        right:170px;
+        top:20px;
+    }
+}
+
+
+/* query for the largest window */
+@media screen and (min-width: 1500px) {
+    #output {
+        font-size:5rem;
+        font-family: 'Open Sans Condensed', 'sans-serif';
+        text-align:'center';
+        color: #777;
+    }
+
+    .clock_output {
+        font-size: 4rem;
+    }
+
+    .fab {
+        font-size: 3rem;
+        position: relative;
+        right:560px;
+        top:20px;
+    }
+}
+
