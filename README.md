@@ -1,4 +1,4 @@
-# daily_Greeting
+# Daily_Greeting
 
 ---
 
