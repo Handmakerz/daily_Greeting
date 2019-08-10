@@ -14,12 +14,14 @@
 
 
 <div class = "headerbackground">
-<div id = "timeOutput" class = "clock_output"></div>
+<!-- <div id = "timeOutput" class = "clock_output"></div> -->
 </div>
 
 <div class = "selection_container">
+   
+  
     <div class = "icons">
-    <i class = "fab fa-js-square"></i>
+    <!-- <i class = "fab fa-js-square"></i> -->
     </div>
 
 <div class="tooltip">
@@ -29,20 +31,25 @@
 <span class="tooltiptext">Current date</button>
 </span>
 </div>
-<!-- <button id="btn2" class="americas-time" title="mexico-time"><i class="fas fa-globe-americas"></i></i></button> -->
 
+<!-- <i class = "fab fa-js-square"></i> -->
 <h1>Language selection</h1>
 
 <select id = "selector" class = "selection">
 <option value = "english">english</option>
 <option value = "czech">česky</option>
 <option value = "espanol">español</option>
+
 </select>
+<div id = "timeOutput" class = "clock_output"></div>
 </div>
 
 <div class = "clockcontent"></div>
+<div class="sub-container">
+<i class = "fab fa-js-square"></i>
 <h4>Vanilla javascript project </h4>
-<hr style = "width:50%;display:inline-block;">
+</div>
+<hr style = "width:80%;display:inline-block;">
 
 <div id = "greetingOutput"></div>
 <br>
@@ -55,6 +62,24 @@
 <div id = "theDate"></div>
 
 <script src = 'javascript/script1.js'></script>
+
+<script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js"></script>
+
+
+<script>
+ 
+  let firebaseConfig = {
+    apiKey: "AIzaSyBB5zMk7gmn8YALl05FxlBN6NfaAF1aa1g",
+    authDomain: "my-international-greeting.firebaseapp.com",
+    databaseURL: "https://my-international-greeting.firebaseio.com",
+    projectId: "my-international-greeting",
+    storageBucket: "",
+    messagingSenderId: "93155125755",
+    appId: "1:93155125755:web:375669f3c7f8047f"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+</script>
 
 </body>
 </html>

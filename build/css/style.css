@@ -26,7 +26,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     background-color:  rgb(210, 208, 211);
+    
 }
 
 .selection {
@@ -94,42 +96,26 @@ button#btn1.calender:hover {
     border-bottom: 4px solid rgb(172, 146, 243);
 }
 
-/* Work on the global time */
-/* .americas-time {
-    position: absolute;
-    top:200px;
-    left:85%;
-    margin-right: 230px;
-    padding: 10px 20px;
-    background-color:  lightgrey;
-    border-style: none;
-    border-radius: 3px;
-    cursor: pointer;
-}  */
-
 h1 {
-    margin-top: 24px;
+    
     letter-spacing: 1px;
     color: rgb(14, 4, 78);
 }
 
 .far {
-    font-size: 1.5rem;
-    /* color: rgb(14, 4, 78); */
-    
+    font-size: 1.5rem;   
 }
 
 .fab {
     font-size: 3rem;
-    position: relative;
-    right:560px;
-    top:15px;
-    color: rgb(14, 4, 78);
+    margin-right: 10px;
+    color: rgb(185, 177, 241);
 }
 
 #greetingOutput{
     font-size: 4rem;
-    color:#777;
+    /* color:#777; */
+    color:rgb(253, 247, 247);
 }
 
 #message {
@@ -138,12 +124,20 @@ h1 {
 }
 
 #theDate {
+    display:none;
     font-size: 1.5rem;
     color: blanchedalmond;
 }
 
 .clock_output {
-    font-size: 4rem;
+    font-size: 2rem;
+}
+
+.sub-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:20px 0px;
 }
 
 #h {
@@ -151,7 +145,7 @@ h1 {
 }
 
 h4 {
-    margin-top: 5%;
+   
     color:whitesmoke;
 }
 h5 {
@@ -172,7 +166,7 @@ a:hover {
 @media screen and (max-width: 780px) {
     button#btn1.calender {
         position: absolute;
-        top:156px;
+        top:70px;
         left:2%;
         margin-right: 230px;
         padding: 10px 20px;
@@ -184,9 +178,7 @@ a:hover {
 
     .fab {
         font-size: 3rem;
-        position: relative;
-        right:50px;
-        top:20px;
+        
     }
 
     .tooltip .tooltiptext {
@@ -226,7 +218,7 @@ a:hover {
 
     button#btn1.calender {
         position: absolute;
-        top:150px;
+        top:70px;
         left:77%;
         margin-right: 230px;
         padding: 10px 20px;
@@ -238,9 +230,6 @@ a:hover {
 
     .fab {
         font-size: 3rem;
-        position: relative;
-        right:170px;
-        top:20px;
     }
 }
 
@@ -260,9 +249,6 @@ a:hover {
 
     .fab {
         font-size: 3rem;
-        position: relative;
-        right:560px;
-        top:20px;
     }
 }
 

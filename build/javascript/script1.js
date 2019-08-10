@@ -6,10 +6,10 @@ let calendar = document.getElementById('btn1').addEventListener('click', toggleD
 function toggleDate () {
 
     let currentDay= document.getElementById('theDate');
-    if(currentDay.style.display==='none'){
-    currentDay.style.display= 'block';
+    if(currentDay.style.display==='block'){
+    currentDay.style.display= 'none';
     }else {
-    currentDay.style.display='none';
+    currentDay.style.display='block';
     }
 };
 
