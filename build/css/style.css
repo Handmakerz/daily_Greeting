@@ -13,14 +13,14 @@ body {
     background-color: rgb(59, 56, 56);
 }
 
-.headerbackground {
+/* .headerbackground {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     background: linear-gradient(rgb(119, 202, 223), rgb(51, 124, 143));
     color: aliceblue;
-}
+} */
 
 .selection_container {
     display: flex;
